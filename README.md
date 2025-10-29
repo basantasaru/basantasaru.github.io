@@ -17,7 +17,7 @@ I am Basanta Saru, an aspiring entrepreneur, self-development enthusiast, and di
 
 ## Connect With Me
 - YouTube: [Basanta Saru](https://www.youtube.com/@basantasaru)
-- YouTube: [Basanta Saru UNSCRIPTED](https://www.youtube.com/@basanta-saru)
+- YouTube: [Basanta Saru UNSCRIPTED](https://www.youtube.com/@basanta_saru)
 - Email:basantasaru@gmail.com
 
 > “Creating my life on my own terms, one step at a time.”
