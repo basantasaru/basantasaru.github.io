@@ -10,4 +10,9 @@ document.getElementById("bookBtn").addEventListener("click", function() {
   link.href = "https://basantasaru.github.io/Haribodhini_Ekadashi_First_Version.pdf";
   link.download = "Haribodhini_Ekadashi_First_Version.pdf";
   link.click();
+
 });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker Registered'));
+}
