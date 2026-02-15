@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Series</title>
+    <style>
+        /* ===== General Styles ===== */
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0b0c1c, #1b1c40);
+            color: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #ffd700;
+            color: #0b0c1c;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ffec8b;
+        }
+
+        /* ===== Header Styles ===== */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #0b0c1c, #1b1c40);
+        }
+        header h1 {
+            font-size: 50px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* ===== About Section ===== */
+        section.about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+        section.about .image img {
+            max-width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+        section.about .content {
+            max-width: 600px;
+        }
+        section.about .content h2 {
+            font-size: 32px;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        section.about .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Chapters Section ===== */
+        section.chapters {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            padding: 0 20px;
+        }
+        section.chapters h2 {
+            font-size: 36px;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        section.chapters ul {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+        section.chapters li {
+            padding: 10px 0;
+            font-size: 18px;
+            color: #e0e0e0;
+        }
+
+        /* ===== Media Queries ===== */
+        @media screen and (max-width: 768px) {
+            section.about {
+                flex-direction: column;
+            }
+            section.about .image img {
+                max-width: 90%;
+            }
+            header h1 {
+                font-size: 38px;
+            }
+            header p {
+                font-size: 18px;
+            }
+        }
+       
+       /* ===== Book Headings ===== */
+       h2 {
+       font-size: 32px;          /* Big and readable */
+       color:lime;           /* Gold title */
+       text-align: left;         /* Align to left, or use center if you prefer */
+       margin: 40px 0 20px 0;    /* Spacing above and below */
+       border-left: 4px solid #ffd700; /* Elegant gold line at left */
+       padding-left: 15px;       /* Space between line and text */
+       }
+       
+       h2 span {
+       color: #ffffff;           /* Optional: if you wrap the book number in <span>, it can stay white */
+       font-weight: normal;
+       }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <h1>My Book Series</h1>
+        <p>Ancient Wisdom for Modern Life</p>
+    </header>
+
+	<!-- ===== Book 1: 100 Years of Hindu Wisdom (Example) ===== -->
+	<h2> 1. 100 Years of Hindu Wisdom </h2>
+	<section class="about" id="book4">
+	<div class="image">
+	<img src="img1.jpg" alt="First Book">
+	</div>
+	<div class="content">
+	<h2>100 Years of Hindu Wisdom</h2>
+	<p>
+	This book teaches how ancient Hindu wisdom can guide modern life.
+	It covers dharma, discipline, silence, self-control, parenting,
+	awareness, and practical daily-life lessons for 100 years of strong living.
+	</p>
+        <button onclick="showMessage()">Buy Now</button>
+	</div>
+	</section>
+	
+	<section class="chapters">
+	<h2>Key Lessons</h2>
+	<ul>
+	<li>Dharma vs Comfort: Making the Right Choices</li>
+	<li>Silence as a Form of Wisdom</li>
+	<li>Power of Discipline in Daily Life</li>
+	<li>Parenting and Raising Strong Children</li>
+	<li>Living with Awareness and Mindfulness</li>
+	<li>Self-Control: Managing Desire and Impulses</li>
+	<li>Balancing Work, Rest, and Spiritual Practice</li>
+	<li>Practical Lessons for Longevity and Inner Strength</li>
+	<li>Reflection, Meditation, and Inner Growth</li>
+	<li>Applying Ancient Wisdom to Modern Challenges</li>
+	</ul>
+	</section>
+
+
+    <!-- ===== Book 2: 100 Lessons for Life ===== -->
+    <h2>2. 100 Lessons for Life</h2>
+    <section class="about" id="book1">
+        <div class="image">
+            <img src="img2.jpg" alt="100 Lessons for Life">
+        </div>
+        <div class="content">
+            <h2>100 Lessons for Life</h2>
+            <p>
+                Learn how ancient Hindu wisdom guides modern living.
+                This book teaches dharma, discipline, self-awareness, silence, parenting,
+                and practical daily-life lessons for lifelong inner strength.
+            </p>
+        <button onclick="showMessage()">Buy Now</button>
+        </div>
+    </section>
+    <section class="chapters">
+        <h2>Key Lessons</h2>
+        <ul>
+            <li>Dharma vs Comfort</li>
+            <li>Silence as Wisdom</li>
+            <li>Power of Discipline</li>
+            <li>Raising Strong Children</li>
+            <li>Living With Awareness</li>
+        </ul>
+    </section>
+
+    <!-- ===== Book 3: The Three Bodies Within ===== -->
+    <h2>3. The Three Bodies Within</h2>
+    <section class="about" id="book2">
+        <div class="image">
+            <img src="img3.jpg" alt="The Three Bodies Within">
+        </div>
+        <div class="content">
+            <h2>The Three Bodies Within</h2>
+            <p>
+                Explore the Physical (Sthula), Subtle (Sukshma), and Causal (Karana) bodies.
+                This book teaches meditation, self-awareness, and exercises to strengthen
+                your body, mind, and inner core for lasting clarity and growth.
+            </p>
+        <button onclick="showMessage()">Buy Now</button>
+        </div>
+    </section>
+    <section class="chapters">
+        <h2>Key Lessons</h2>
+        <ul>
+            <li>Understanding the Physical Body</li>
+            <li>Mastering the Subtle Body</li>
+            <li>Exploring the Causal Body</li>
+            <li>Energy, Mind, and Prana</li>
+            <li>Connecting with the Inner Core</li>
+        </ul>
+    </section>
+
+    <!-- ===== Book 4: The Three Forces of Existence ===== -->
+    <h2>4. The Three Forces of Existence</h2>
+    <section class="about" id="book3">
+        <div class="image">
+            <img src="img4.jpg" alt="The Three Forces of Existence">
+        </div>
+        <div class="content">
+            <h2>The Three Forces of Existence</h2>
+            <p>
+                Discover the roles of Brahma, Vishnu, and Shiva and how they guide daily life.
+                Learn to align your actions with creation, preservation, and transformation,
+                achieving balance, purpose, and inner harmony.
+            </p>
+        <button onclick="showMessage()">Buy Now</button>
+        </div>
+    </section>
+    <section class="chapters">
+        <h2>Key Lessons</h2>
+        <ul>
+            <li>Brahma: Creation and New Beginnings</li>
+            <li>Vishnu: Balance and Sustenance</li>
+            <li>Shiva: Transformation and Renewal</li>
+            <li>Applying Cosmic Principles Daily</li>
+            <li>Living with Purpose and Clarity</li>
+        </ul>
+    </section>
+
+
+    <!-- ===== JavaScript ===== -->
+<script type="text/javascript">
+
+function scrollToSection() {
+    document.getElementById("about").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+}
+
+function showMessage() {
+    alert("Thank you for your interest! Book coming soon.");
+}
+
+</script>
+
+</body>
+</html>

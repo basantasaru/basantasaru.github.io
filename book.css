@@ -1,0 +1,60 @@
+body {
+	font-family: 'Garamond', serif;
+	margin: 0;
+	padding: 0;
+	background-color: #0b0c1c; /* dark cosmic background */
+	color: #f5f5f5;
+	}
+	
+	header {
+	text-align: center;
+	padding: 280px 20px;
+	background: linear-gradient(to bottom, #0b0c1c, #1b1c40);
+	}
+	
+	header h1 {
+	font-size: 48px;
+	color: #ffd700; /* gold title */
+	margin-bottom: 10px;
+	}
+	
+	header p {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+	}
+	
+	button {
+	padding: 12px 25px;
+	background-color: #ffd700;
+	color: #0b0c1c;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.3s;
+	}
+	
+	button:hover {
+	background-color: #ffec8b;
+	}
+	
+	section {
+	padding: 60px 20px;
+	}
+	
+	section .image img {
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+	}
+	
+	.chapters ul {
+	list-style-type: square;
+	padding-left: 20px;
+	}
+	
+	.chapters li {
+	padding: 8px 0;
+	font-size: 18px;
+	}
