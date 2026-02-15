@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>100 Years Hinduism Living</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="book.css">
+	</head>
+	<body>
+	
+<header>
+    <h1>100 Lessons for Life</h1>
+    <p>Ancient Hindu Wisdom for Modern Living</p>
+    <button onclick="scrollToSection()">Read More</button>
+</header>
+
+<section class="about" id="about">
+    <div class="image">
+        <img src="img2.jpg" alt="Book Cover Image">
+    </div>
+    <div class="content">
+        <h2>About The Book</h2>
+        <p>
+            "100 Lessons for Life" shares timeless teachings from Hindu philosophy applied to everyday life.
+            Learn how dharma, discipline, self-awareness, silence, and mindful decision-making
+            can transform your habits, relationships, and inner strength across a lifetime.
+        </p>
+        <button onclick="showMessage()">Buy Now</button>
+    </div>
+</section>
+
+<section class="chapters" id="lessons">
+    <h2>Key Lessons</h2>
+    <ul>
+        <li>Dharma vs Comfort: Choosing the Right Path</li>
+        <li>Silence as a Form of Wisdom</li>
+        <li>Discipline as Inner Power</li>
+        <li>Raising Strong and Mindful Children</li>
+        <li>Awareness and Presence in Daily Life</li>
+        <li>Mastering Desire and Attachment</li>
+        <li>Balance Between Action and Rest</li>
+        <li>Financial Wisdom and Saving Habits</li>
+        <li>Understanding the Self Through Koshas</li>
+        <li>Reflection, Meditation, and Inner Growth</li>
+    </ul>
+</section>
+<footer>
+    <p>© 2026 Basanta | All Rights Reserved</p>
+</footer>
+
+<script type="text/javascript">
+
+function scrollToSection() {
+    document.getElementById("about").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+}
+
+function showMessage() {
+    alert("Thank you for your interest! Book coming soon.");
+}
+
+</script>
+</body>
+</html>
